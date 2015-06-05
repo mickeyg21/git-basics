@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+  
+ <html lang="en">
+ <head>
+	<title>Arrays 2</title>
+</head>
+	<body>
+	<script language="javascript" type="text/javascript">
+	  var grades = [85, 92, 70, 63, 55, 92, 88, 77, 91, 91];
+	   document.write(grades[11]);  //undefined - a logical error in runtime - make sure you work within the bounds of an array - arrays are objects
+	   document.write("<br/>" + grades.length + "<br/>");
+	   grades.push(100, 62);
+	   var popoff = grades.pop();
+		//looping through an object (for in loop) - look up methods and properties - go to w3schools.com/jsref/jsref_obj_array.asp
+		  for(x in grades)
+		  {
+		   document.write("Iteration: " + x);
+		   document.write("<br/>" + grades[x] + "<br/>")
+		  
+		  
+		  }
+	      document.write(popoff);
+		  document.write(popoff);
+	
+	  var names= ["bill", "joan", "mary", "candice", "robert", "jane"];
+	    names.sort();
+		for (var y = 0; y < names.length; y++)
+		{
+		
+		    document.write(names[y] + "<br/>");
+	    
+		}
+	
+	
+	</script>
+	
+	</body>
+	
+</html>

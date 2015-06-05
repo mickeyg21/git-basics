@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+  
+ <html lang="en">
+ <head>
+	<title>The Document Object</title>
+	  <script language="javascript" type="text/javascript">
+	   function processName()
+	   {
+	     var first;
+		 var last;
+		 first=document.getElementById('first').value;
+		 last=document.getElementById('last').value;
+		 
+		 alert(first + " " + last);
+	   
+	     document.getElementById('para').style.backgroundColor="#bb0000";
+	     document.getElementById('para').style.fontWeight="bold";
+	   }
+	  </script>
+	 
+	 </head>
+	<body>
+	
+	
+	  First: <input type = "text" id="first" /> <!-- id gives js access to the html element --->
+	  <br/>
+	  Last: <input type = "text" id="last" />
+	 <input type="button" value="Click here" onClick="processName()" />
+	 <p id="para">This is Mickeys paragraph.  Blah blah balh owjfowfl ofjeowfjeof
+	 ofwejfoijfwoj j ojfwoefjw </p>
+	 
+	 
+	</body>
+	
+</html>

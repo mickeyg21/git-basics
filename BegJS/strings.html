@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+  
+ <html lang="en">
+ <head>
+	<title>Strings</title>
+</head>
+	<body>
+	<script language="javascript" type="text/javascript">
+	  //strings as objects (properties - describe the object, methods - do something to the string)
+	   var phrase = "If you are strong enough there are no precedents.";
+	    
+		document.write("Length: " + phrase.length);
+		document.write("<br/>");
+		
+	  //methods
+	  //charAt() - Gives specific position in the string
+	    for(var i=0; i < phrase.length; i++)
+		{
+		  document.write(i + ": " + phrase.charAt(i));
+		  document.write(i + ": " + phrase.charCodeAt(i))
+		  document.write("<br/>");
+		}
+	   //to search for a certain character's index
+		  document.write("Index of s: " + phrase.indexOf('s'));
+	 //replace method takes 2 arguments - regular expression - RETURNS the string but does not change the original
+		 document.write(phrase.replace("strong", "attractive"));
+		 
+		 var names="Mary, bob, Leslie, Tom, Tim";
+		 var moreNames = names.split(',');
+		 document.write("<br/>");
+		 for (var x=0; x < moreNames.length; x++)
+		 {
+		  document.write(moreNames[x]);
+		  document.write("<br/>");
+		 }
+	</script>
+	
+	</body>
+	
+</html>

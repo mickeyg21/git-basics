@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+  
+ <html lang="en">
+ <head>
+	<title>Working with innerHTML</title>
+	<script language="javascript" type="text/javascript">
+	  function changeContent()
+	  {
+	    document.getElementById('content').innerHTML = "<h3>See? The content has changed!</h3>";
+	  }
+	</script>
+	
+	</head>
+	<body>
+     <div id="content">
+	   <p>This paragraph will change when the document object's innerHTML property is accessed.</p>
+	
+	</div>
+	<input type="button" value="click" onClick="changeContent()" />
+	</body>
+	
+</html>

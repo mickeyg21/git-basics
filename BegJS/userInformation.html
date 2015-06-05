@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+  
+ <html lang="en">
+ <head>
+	<title>User Information</title>
+</head>
+	<body>
+	<script language="javascript" type="text/javascript">
+	  //Navigator Object
+	   document.write("Code Name of Browser: " + navigator.appCodeName);
+	   document.write("<br/>Name of Browser: " + navigator.appName);
+	   document.write("<br/>Version of Browser: " + navigator.appVersion);
+	   
+	 //Windows Object
+	 document.write("Document: " + window.document);
+	 document.write("<br/>");
+	   
+	   //to set window size and also get dimensions
+     	 
+	 window.innerWidth = 200;
+	 window.innerHeight = 200; //this doesn't work by the way
+	 
+	 document.write("<br/>Width: " + window.innerWidth);
+	 document.write("<br/>Height: " + window.innerHeight);
+	 document.write("<br/>Location: " + window.location);
+	 //window.location = "http://www.austintexas.gov";
+	 document.write("<br/>Location protocol: " + window.location.protocol);
+	 
+	 //Screen Object
+	 document.write("<br/>Screen Height: " + screen.height);
+	 document.write("<br/>Screen Color Depth: " + screen.colorDepth);
+	
+	</script>
+	
+	</body>
+	
+</html>

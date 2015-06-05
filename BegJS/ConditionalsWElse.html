@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+  
+ <html lang="en">
+ <head>
+	<title>Conditionals with Else</title>
+</head>
+	<body>
+	<script language="javascript" type="text/javascript">
+	  var playerScore=25000;
+	  var highScore=10000;
+	  
+	  if(playerScore > highScore)
+	  {
+	   highScore = playerScore;
+	   document.write("You attainded the highscore");
+	  } else
+	  {
+	  document.write("You have not attainded the high score");
+	  }
+	  
+	  var numericalGrade=25;
+	  var letterGrade;
+	  
+	  if(numericalGrade >=90)
+	  {
+	   letterGrade = "A";
+	   document.write("You got an A");
+	  } else if (numericalGrade >= 80)//with else if, short circuit evaluation.  Once a statement evaluates to true it will stop and the below works.
+	  {
+	    letterGrade = "B";
+	    document.write("You got a B");
+	  }else if (numericalGrade >= 70)
+	  {
+	    letterGrade = "C";
+	    document.write("You got a C");
+	  } else
+	    {
+		   letterGrade="F";
+		 }
+	
+		document.write("Your grade is " + letterGrade);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</script>
+	
+	</body>
+	
+</html>

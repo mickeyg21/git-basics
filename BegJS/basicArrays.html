@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+  
+ <html lang="en">
+ <head>
+	<title>Basic Arrays</title>
+</head>
+	<body>
+	<script language="javascript" type="text/javascript">
+	  //3 ways of creating an array
+	  var firstNames = new Array(); //instantiation of an Array() object - arrays start with 0
+	    firstNames[0]="mickey";
+		firstNames[1]="mary";
+		firstNames[2]="mo";
+		firstNames[3]="larry";
+	// condensed method of array creation
+	 var animals = new Array("dog", "cat", "mouse", "crow", "cow", "horse");
+	 
+	//literal array
+	var companies = ["apple", "google", "microsoft", "GE"];
+	
+	alert(firstNames[3]);
+	alert(animals[1]);
+	
+	//to access all members of an array
+	for(var i = 0; i < firstNames.length; i++)
+	 {
+	   document.write(firstNames[i]);
+	   document.write("<br/>");
+	   
+	}
+	//to modify the arrray
+	
+	 firstNames[1] = "Herbert";
+	for (var i = 0; i < firstNames.length; i++)
+	 {
+	   document.write(firstNames[i]);
+	   document.write("<br/>");
+	   
+	}
+	
+	</script>
+	
+	</body>
+	
+</html>

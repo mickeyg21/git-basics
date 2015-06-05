@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd" >
+  
+ <html lang="en">
+ <head>
+	<title>Variable Operators</title>
+</head>
+	<body>
+	
+	<script language="javascript" type="text/javascript">
+	  var operandOne;
+	  var operandTwo;
+	  operandOne=125; //integer
+	  operandTwo=15.371; //floating
+	  
+	  document.write(operandOne);
+	  document.write("<br/>");
+	  document.write(operandTwo);
+	  document.write("<br/>");
+	  document.write("10 % 3 " + (10 % 3)); //modulus operator (whatever is left over after division)
+	  operandOne++; //increment operator
+	  operandTwo--; //decrement operator
+	  document.write("<br/>");
+	  document.write(operandOne);
+	  document.write("<br/>");
+	  document.write(operandTwo);
+	  document.write("<br/>");
+	  document.write(operandTwo++,operandTwo);
+	  /*
+	    variable++  --> Postfix Increment Operator
+		++variable  --> Prefix Increment Operator
+		
+		PostFix - The rest of the mathematical expression is evaluated and then the increment takes place 
+		PreFix - The increment takes place then the rest of the expression is evaluated 
+		
+	
+	*/
+	var teamCity;
+	var teamName;
+	
+	teamCity="San Francisco";
+	teamName="Giants";
+	var fullTeamInfo = teamCity + " " + teamName;
+	document.write("<br/>");
+	document.write(fullTeamInfo);
+	</script>
+	
+	</body>
+	
+</html>
